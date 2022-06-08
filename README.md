@@ -44,6 +44,8 @@ pipeline运行的时候会从服务器上下载[Calibration Reference Data Syste
 
 这个fits里读出的是每个读出时刻某个像素积累的计数，如果某个读出时刻某个像素收到宇宙线的话，从读出时刻，像素计数的图上很容易看到读数有个突变，如果积分到一半儿时间的时候像素饱和，也可以用还没饱和的那些计数和积累时间来[估计源的流量)[https://www.cosmos.esa.int/documents/739790/3315704/ESA_JWST_Master_Class_Detectors_Assignment.pdf)
 
+![数据结构](https://jwst-docs.stsci.edu/files/115769825/115769829/1/1619663725399/Data_cube.png)
+
 原始数据名字后半部分里有_nrca1到5，编号和探测器的位置关系：
 
 ![编号和探测器的位置关系](https://jwst-docs.stsci.edu/files/97978207/97978216/1/1596073158761/NIRCam+detectors+FOV.png)
@@ -51,6 +53,8 @@ pipeline运行的时候会从服务器上下载[Calibration Reference Data Syste
 前四个探测器对应是短波近红外相机读出模式，五号探测器对应长波红外相机，视场大一些，分辨率也低一些
 
 ### 数据处理pipeline运行
+
+![数据流](https://jwst-docs.stsci.edu/files/115769825/115769826/1/1619663725333/JWST_calibration_flow-fixed.png)
 
 韦伯数据处理pipeline指的是从原始数据到science ready数据，分[三个步骤](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing)，得到的数据产品也分为三个级别，对原始数据做了仪器响应修正得到的是[一级数据](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing/calwebb_detector1)，再做定标后得到的是[二级数据](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing/calwebb_image2)，把二级数据叠加起来得到的是[三级数据](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing/calwebb_image3)，其中二级数据分为abc三个品种，简单的说处理到二级数据几乎就可以做科研了
 
