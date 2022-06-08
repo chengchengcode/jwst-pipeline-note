@@ -20,16 +20,15 @@ JWST[袖珍手册.pdf](https://www.stsci.edu/files/live/sites/www/files/home/jws
 
 两套pipeline略有不同，可以都下下来看看数据感受一下
 
-### pipeline安装
+### Pipeline安装
 
-在[pipeline程序网站](https://github.com/spacetelescope/jwst) 的 [Install the DMS Operational Build](https://github.com/spacetelescope/jwst#installing-a-dms-operational-build) 的安装方案：用conda安装jwstdp的环境，然后用这个环境里的python安装jwst，asdf，requests，astropy等等
+我用了[pipeline程序网站](https://github.com/spacetelescope/jwst) 的 [Install the DMS Operational Build](https://github.com/spacetelescope/jwst#installing-a-dms-operational-build) 的安装方案：用conda安装jwstdp的环境，然后用这个环境里的python安装jwst，asdf，requests，astropy等等
 
 pipeline运行的时候会从服务器上下载[Calibration Reference Data System (CRDS)](https://jwst-crds.stsci.edu/)定标文件到crds_cache文件夹，所以需要在运行pipeline前指定crds_cache文件夹位置和定标文件网站到环境变量CRDS_PATH和CRDS_SERVER_URL，也可以在python里这么着：
 
  os.environ['CRDS_PATH'] = '~/Jobs/Astro-Code/crds_cache
 
  os.environ['CRDS_SERVER_URL'] = 'https://jwst-crds.stsci.edu'
-
 
 这样pipeline就配置好了，可以处理数据了：
 
