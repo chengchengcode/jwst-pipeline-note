@@ -2,7 +2,7 @@
 
 ## 相关网站：
 
-JWST[文档网站](https://jwst-docs.stsci.edu/),包含大量望远镜各样的信息，可以一直点链接一直看，初次见到这个网站时想起小时候第一次看维基百科或者中国大百科全书电子版的场景，一样容易沉迷
+JWST[文档网站](https://jwst-docs.stsci.edu/),包含望远镜各式各样的信息
 
 JWST[数据网站](https://www.stsci.edu/jwst/science-execution/data-analysis-toolbox)里包括处理到可以做科学的pipeline、后续的数据分析工具，以及望远镜数据处理培训网站[JWebbinars](https://www.stsci.edu/jwst/science-execution/jwebbinars), 也可以直接去JWST的[youtube网页](https://www.youtube.com/c/JWSTObserver)看个痛快
 
