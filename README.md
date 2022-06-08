@@ -53,7 +53,7 @@ pipeline运行的时候会从服务器上下载[Calibration Reference Data Syste
 
 ### 数据处理pipeline运行
 
-韦伯数据处理pipeline指的是从原始数据到science ready数据，分[三个步骤](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing)，得到的数据产品也分为三个级别，对原始数据做了仪器响应修正得到的是[一级数据](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing#StagesofJWSTDataProcessing-Stage1)，再做定标后得到的是[二级数据](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing#StagesofJWSTDataProcessing-Stage2)，把二级数据叠加起来得到的是[三级数据](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing/calwebb_image3)，其中二级数据分为abc三个品种，简单的说处理到二级数据几乎就可以做科研了
+韦伯数据处理pipeline指的是从原始数据到science ready数据，分[三个步骤](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing)，得到的数据产品也分为三个级别，对原始数据做了仪器响应修正得到的是[一级数据](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing/calwebb_detector1)，再做定标后得到的是[二级数据](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing/calwebb_image2)，把二级数据叠加起来得到的是[三级数据](https://jwst-docs.stsci.edu/jwst-science-calibration-pipeline-overview/stages-of-jwst-data-processing/calwebb_image3)，其中二级数据分为abc三个品种，简单的说处理到二级数据几乎就可以做科研了
 
 ![三个步骤](https://jwst-docs.stsci.edu/files/97980350/97980351/1/1596073343762/JWST_pipeline_structure.png)
 
@@ -75,9 +75,11 @@ image3.run(‘asn_file’)
 
 数据处理第一步是解决仪器响应，要把分析像素上读数和时间的关系，把坏点，饱和像素，增益，暗场等等的全都考虑进去，这一步需要用CRDS网站的设备信息，如果本地没有的话，程序会尝试从网站下载，大约3个G，处理几波数据后这个crds_cache文件夹会变得很大
 
+![第一步](https://jwst-docs.stsci.edu/files/97980352/97980353/2/1613499228405/CALWEBB_DETECTOR1.png)
+
 第一步做完后，得到的是rate文件，下来是第二步，修正平场，wcs，流量定标之类的，效果是这样的:
 
-![第二步]()
+![第二步](https://jwst-docs.stsci.edu/files/97980355/97980356/1/1596073344709/CALWEBB_IMAGE2.png)
 
 在CEERS项目的例子里，平场里手动加了新的结构，所以单独做了修正
 
