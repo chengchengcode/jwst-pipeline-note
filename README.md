@@ -18,7 +18,7 @@ JWST[袖珍手册.pdf](https://www.stsci.edu/files/live/sites/www/files/home/jws
 
 我这里用来运行[pipeline](https://github.com/spacetelescope/jwst)的数据主要有：EGS天区巡天项目[CEERS](https://ceers.github.io/releases.html)的[仿真数据](https://web.corral.tacc.utexas.edu/ceersdata/)和[jwebbinars](https://www.stsci.edu/jwst/science-execution/jwebbinars)第三课的资料
 
-两套pipeline略有不同，可以都下下来看看数据感受一下
+两套处理流程略有不同，可以都下下来看看数据感受一下
 
 ### Pipeline安装
 
