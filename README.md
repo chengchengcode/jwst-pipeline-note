@@ -80,12 +80,24 @@ image3.run(‘asn_file’)
 
 ![第一步](https://jwst-docs.stsci.edu/files/97980352/97980353/2/1613499228405/CALWEBB_DETECTOR1.png)
 
-第一步做完后，得到的是rate文件，下来是第二步，修正平场，wcs，流量定标之类的，效果是这样的:
+第一步做完后，得到的是rate文件
+
+![stage1](https://github.com/chengchengcode/jwst-pipeline-note/blob/main/figures/stage1.png)
+
+接下来是第二步，修正平场，wcs，流量定标之类的：
 
 ![第二步](https://jwst-docs.stsci.edu/files/97980355/97980356/1/1596073344709/CALWEBB_IMAGE2.png)
 
+效果是这样的:
+
+![stage2](https://github.com/chengchengcode/jwst-pipeline-note/blob/main/figures/stage2.png)
+
 在CEERS项目的例子里，平场里手动加了新的结构，所以单独做了修正
 
-第三步，把几次观测的图像合并到一起，并且会做著名的[Drizzle](https://drizzlepac.readthedocs.io/en/latest/astrodrizzle.html)这里需要提供json文件，理论上获得原始数据的时候也会得到这个文件，然后运行一下第三步就可以了
+第三步，把几次观测的图像合并到一起，并且会做著名的[Drizzle](https://drizzlepac.readthedocs.io/en/latest/astrodrizzle.html)这里需要提供json文件，理论上获得原始数据的时候也会得到这个文件
 
 ![第三步](https://jwst-docs.stsci.edu/files/97980367/97980368/2/1613499229973/CALWEBB_IMAGE3.png)
+
+然后运行一下第三步就会得到：
+
+![stage3](https://github.com/chengchengcode/jwst-pipeline-note/blob/main/figures/stage3.png)
