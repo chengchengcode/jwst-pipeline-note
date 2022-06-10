@@ -42,7 +42,7 @@ pipeline运行的时候会从服务器上下载[Calibration Reference Data Syste
 
 从复位开始，读出三次，每次积累四个曝光单元，每次读出的数据是从复位开始到读出时刻的总计数，用ds9可以看出来原始数据这个多层的fits的[计数会越来越亮](https://jwst-docs.stsci.edu/understanding-exposure-times)，也可以分成十二次读出等各种读出模式，[图片出处](https://jwst-docs.stsci.edu/jwst-near-infrared-spectrograph/nirspec-instrumentation/nirspec-detectors/nirspec-detector-readout)
 
-这个fits里读出的是每个读出时刻某个像素积累的计数，如果某个读出时刻某个像素收到宇宙线的话，从读出时刻，像素计数的图上很容易看到读数有个突变，如果积分到一半儿时间的时候像素饱和，也可以用还没饱和的那些计数和积累时间来[估计源的流量)[https://www.cosmos.esa.int/documents/739790/3315704/ESA_JWST_Master_Class_Detectors_Assignment.pdf)
+这个fits里读出的是每个读出时刻某个像素积累的计数，如果某个读出时刻某个像素收到宇宙线的话，从读出时刻，像素计数的图上很容易看到读数有个突变，如果积分到一半儿时间的时候像素饱和，也可以用还没饱和的那些计数和积累时间来[估计源的流量](https://www.cosmos.esa.int/documents/739790/3315704/ESA_JWST_Master_Class_Detectors_Assignment.pdf)
 
 ![数据结构](https://jwst-docs.stsci.edu/files/115769825/115769829/1/1619663725399/Data_cube.png)
 
