@@ -6,7 +6,7 @@ JWST[文档网站](https://jwst-docs.stsci.edu/),包含望远镜各式各样的�
 
 JWST[数据网站](https://www.stsci.edu/jwst/science-execution/data-analysis-toolbox)里包括处理到可以做科学的pipeline、后续的数据分析工具，以及望远镜数据处理培训网站[JWebbinars](https://www.stsci.edu/jwst/science-execution/jwebbinars), 也可以直接去JWST的[youtube网页](https://www.youtube.com/c/JWSTObserver)看个痛快
 
-JWST[观测项目网站](https://www.stsci.edu/jwst/science-execution/approved-programs) 具体到深场巡天的项目被聚合在[这里](http://www.iap.fr/jwst-edls/fields.html)
+JWST[观测项目网站](https://www.stsci.edu/jwst/science-execution/approved-programs) 具体到深场巡天的项目被聚合在[这里](http://www.iap.fr/jwst-edls/fields.html)， Gabriel Brammer老师做了个JWST的[观测安排信息的网站](https://erda.ku.dk/vgrid/Gabriel%20Brammer/JWST-Cycle1/full_timeline.html)
 
 JWST主要用[mirage](https://github.com/spacetelescope/mirage)来生成[仿真数据](https://www.stsci.edu/jwst/science-planning/proposal-planning-toolbox/simulated-data) , mirage这个软件整合了仪器特性，如果要自己运行的话需要大约三百G硬盘容量来下载仪器数据
 
